@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My University</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My University</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#administration">Administration</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#examinations">Examinations</a></li>
+                    <li><a href="#hrdc">HRDC</a></li>
+                    <li><a href="#research">Centre for Research</a></li>
+                    <li><a href="#student-life">Student Life</a></li>
+                    <li><a href="#campus-harmony">Campus Harmony</a></li>
+                    <li><a href="#info-corner">Information Corner</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#ombudsperson">OMBUDSPERSON</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to My University</h2>
+            <p>Your future starts here. Explore our programs and join us!</p>
+            <a href="#admissions" class="btn">Apply Now</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>My University is dedicated to providing quality education and fostering innovation.</p>
+        </div>
+    </section>
+
+    <section id="administration">
+        <div class="container">
+            <h2>Administration</h2>
+            <p>Meet our dedicated administration team committed to excellence.</p>
+        </div>
+    </section>
+
+    <section id="academics">
+        <div class="container">
+            <h2>Academics</h2>
+            <p>Explore our diverse academic programs and courses.</p>
+        </div>
+    </section>
+
+    <section id="admissions">
+        <div class="container">
+            <h2>Admissions</h2>
+            <p>Find out how to apply and join our community.</p>
+        </div>
+    </section>
+
+    <section id="examinations">
+        <div class="container">
+            <h2>Examinations</h2>
+            <p>Information regarding examination schedules and procedures.</p>
+        </div>
+    </section>
+
+    <section id="hrdc">
+        <div class="container">
+            <h2>HRDC</h2>
+            <p>Human Resource Development Centre for faculty and staff development.</p>
+        </div>
+    </section>
+
+    <section id="research">
+        <div class="container">
+            <h2>Centre for Research</h2>
+            <p>Promoting research and innovation across various fields.</p>
+        </div>
+    </section>
+
+    <section id="student-life">
+        <div class="container">
+            <h2>Student Life</h2>
+            <p>Discover the vibrant student life and extracurricular activities.</p>
+        </div>
+    </section>
+
+    <section id="campus-harmony">
+        <div class="container">
+            <h2>Campus Harmony</h2>
+            <p>Fostering a harmonious and inclusive campus environment.</p>
+        </div>
+    </section>
+
+    <section id="info-corner">
+        <div class="container">
+            <h2>Information Corner</h2>
+            <p>Access important information and resources for students.</p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <p>Check out our campus and events through our gallery.</p>
+        </div>
+    </section>
+
+    <section id="ombudsperson">
+        <div class="container">
+            <h2>OMBUDSPERSON</h2>
+            <p>Learn about the role of the Ombudsperson and how to reach out for support.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us!</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- <div id="chatbot">
+        <div id="chatbox">
+            <div id="messages"></div>
+            <input type="text" id="userInput" placeholder="Ask me anything...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div> -->
+
+    <div id="chatbot" onclick="toggleChat()">
+        <!--to make the button image invisible after clicking it-->
+        <button id="resize" style="background-color: #ffffff; display: flex;"><img src="chatbot-logo.png" style="height: 40px; width: 40px;" alt="Chatbot Logo" id="chatbotLogo"></button>
+
+
+        <div id="CHATBOT" style="display: none;">
+            <img src="chatbot-logo.png" style="height: 40px; width: 40px;" alt="Chatbot Logo" >
+            <h3>CHATBOT</h3>
+        </div>
+
+
+        
+        <div id="chatbox" style="display: none;">
+            <div id="messages"></div>
+            <input type="text" id="userInput" placeholder="Ask me anything...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 My University. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
