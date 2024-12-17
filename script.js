@@ -8,6 +8,8 @@ document.getElementById("resize").addEventListener("click", function(){
 });
 
 
+
+
 // new section added to improvise chatbot
 function toggleChat() {
     const chatbox = document.getElementById('chatbox');
@@ -15,6 +17,18 @@ function toggleChat() {
     chatbox.style.display = chatbox.style.display === 'none' ? 'flex' : 'flex';//none->flex
     CHATBOT.style.display = CHATBOT.style.display === 'none' ? 'flex' : 'flex';
 }
+
+
+//double tap to close the chat box,chatbox header, and reesize the logo
+function toggleChat2() {
+    const chatbox = document.getElementById('chatbox');
+    const CHATBOT = document.getElementById('CHATBOT');
+    const image = document.getElementById("chatbotLogo");
+    image.style.height='40px';
+    chatbox.style.display = chatbox.style.display === 'flex' ? 'none' : 'none';
+    CHATBOT.style.display = CHATBOT.style.display === 'flex' ? 'none' : 'none';
+}
+
 
 
 function sendMessage() {
