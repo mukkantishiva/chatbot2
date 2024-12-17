@@ -74,6 +74,8 @@ function getBotResponse(input) {
     }else if (lowerInput.includes("infra") || lowerInput.includes("infrastructure") || lowerInput.includes("infrastructures")) {
         return "Our college has the following infrastructure Serene & stimulating ambience created by the appropriate use of technology 150 Acres of Campus, 80+Multimedia Classrooms, 8500+Flowering plants,1 Million sqft of built-up area";
     } 
+
+    
     // Programs Offered:
 
     else if (lowerInput.includes("majors") || lowerInput.includes("programs")) {
@@ -87,7 +89,7 @@ function getBotResponse(input) {
     } else if (lowerInput.includes("graduate programs")) {
         return "Our graduate programs include Master's and Ph.D. degrees in various fields.";
     } else if (lowerInput.includes("many courses") || lowerInput.includes("courses count") || lowerInput.includes("course count") || lowerInput.includes("of courses")) {
-        return "We offer a variety of online courses across different disciplines.";
+        return "We offer a wide variety of courses specified below                            MBBS, B.Tech, M.tech, B.Sc. in Allied Health Sciences, M.Sc. in Allied Health Sciences, Ph.D. in Allied Health Sciences, B.Sc. in Agriculture, M.Sc. in Agriculture, Ph.D. in Agriculture, B.Sc. in Physiotherapy, M.Sc. in Physiotherapy, Ph.D. in Physiotherapy, B.Sc. in Nursing, M.Sc. in Nursing, Ph.D. in Nursing, B.Pharm (Bachelor of Pharmacy), M.Pharm (Master of Pharmacy), Ph.D. in Pharmacy";
     } 
     
     
