@@ -48,6 +48,22 @@ function sendMessage() {
     messages.scrollTop = messages.scrollHeight; // Scroll to the bottom
 }
 
+    // Get the input field and button
+    var input = document.getElementById("userInput");
+    var button = document.getElementById("sendbtn");
+
+    // Execute a function when the user presses a key on the keyboard
+    input.addEventListener("keypress", function(event) {
+        // If the user presses the "Enter" key on the keyboard
+        if (event.key === "Enter") {
+            // Cancel the default action, if needed
+            event.preventDefault();
+            // Trigger the button element with a click
+            button.click();
+        }
+    });
+
+
 
 
 function getBotResponse(input) {
@@ -57,7 +73,7 @@ function getBotResponse(input) {
         return " MBBS, B.Tech, M.tech, B.Sc. in Allied Health Sciences, M.Sc. in Allied Health Sciences, Ph.D. in Allied Health Sciences, B.Sc. in Agriculture, M.Sc. in Agriculture, Ph.D. in Agriculture, B.Sc. in Physiotherapy, M.Sc. in Physiotherapy, Ph.D. in Physiotherapy, B.Sc. in Nursing, M.Sc. in Nursing, Ph.D. in Nursing, B.Pharm (Bachelor of Pharmacy), M.Pharm (Master of Pharmacy), Ph.D. in Pharmacy";
     } else if (lowerInput.includes("contact")) {
         return "You can reach us at    Toll Free Number: 1800-5322-222, +91 70944 58021 | 70944 58022, enquiry@dsuniversity.ac.in, www.dsuniversity.ac.in";
-    } else if (lowerInput.includes("about")) {
+    } else if (lowerInput.includes("about university")) {
         return "Our college offers a variety of programs to help students achieve their academic goals.Dhanalakshmi Srinivasan University (DSU) in Tiruchirappalli, Tamil Nadu, was established under the Tamil Nadu Private Universities Act, 2019. DSU offers a wide range of multidisciplinary academic programs, including medicine, paramedical, engineering, and agricultural sciences. The university's motto, “education for the real world,” reflects its commitment to nurturing future generations. With a green campus, state-of-the-art infrastructure, and top-class faculty, DSU serves the needs of both national and international students.";
     } else if (lowerInput.includes("admissions")) {
         return "You can apply for admission through our website. The application deadline is June 30.";
